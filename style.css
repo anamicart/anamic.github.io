@@ -1,0 +1,19 @@
+
+  canvas {
+    display: block;
+  }
+
+  @media only screen and (max-width: 400px) {
+    #info {
+      padding: 1.2rem;
+      font-size: 1.2rem; 
+    }
+  }
+
+  #canvas {
+    position:fixed;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+}
