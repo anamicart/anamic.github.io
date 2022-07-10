@@ -2,13 +2,9 @@ var stars = [];
 
 
 function setup() {
-  createCanvas(windowWidth, windowHeight);
-      // Set the value of fullscreen
-    // into the variable
-    let fs = fullscreen();
-      
-    // Call to fullscreen function
-    fullscreen(!fs);
+    var cnv = createCanvas(windowWidth, windowHeight);
+    cnv.style('display', 'block');
+
   
   
   for (var i = 0; i < 1000; i++) {
@@ -16,21 +12,17 @@ function setup() {
 	}
   
 }
-/*
-function resizeCanvas() {
-    canvas.width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-    canvas.height = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
 
-    WIDTH = canvas.width;
-    HEIGHT = canvas.height;
+function windowResized() {
+    resizeCanvas(windowWidth, windowHeight);
+  }
 
-    clearScreen();
-}
-*/
+
+
 function draw() {
   background(0);
    
- 
+   /*
   
   //BORDER linework
   strokeWeight(1.5)
@@ -41,7 +33,7 @@ function draw() {
   line(10,10,390,10)//top
   line(390,10,390,348)
   
-  
+    /*
   
   // TRIANGLES
   
@@ -111,7 +103,7 @@ function draw() {
   ellipse(230,220,80,80);
   
 
-  
+  /*
   
   //mini-er circles
   fill(255,0,180);
@@ -122,7 +114,7 @@ function draw() {
   
   fill(235,250,0);
   circle(230,220,40);
-  
+  */
   
   
   //stars
